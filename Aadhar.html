@@ -14,7 +14,16 @@
         @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
 
-  
+        .fieldset-row {
+            display: flex;
+            gap: 1px;
+            background-color:  rgba(147, 159, 166, 0.144);
+
+        }
+
+        .fieldset-row > fieldset {
+            flex: 1;
+        }
     </style>
      <link rel="stylesheet" type="text/css" href="style1.css" /> 
 </head>
@@ -26,10 +35,11 @@
         <div class="container_login">
             <div>
                 <h1 style="margin-bottom: 10px;">KYC DETAILS</h1>
-                <p class="info">Please fill the KYC Details of Applicant or Co-applicant Details to Complete KYC</p>
+                <p class="info">Please fill the KYC Details of Applicant or Guarantor Details to Complete KYC</p>
             </div>
             <div class="main_content">
                 <form action="Product.html">
+                    <div class="fieldset-row">
                     <fieldset>
                         <legend>Applicant Details</legend>
                         <div class="f">
@@ -76,7 +86,12 @@
                         </div>
                     </fieldset>
                     <fieldset>
-                        <legend>Co-Applicant Details</legend>
+                        <legend>Viewer</legend>
+                    </fieldset>
+                </div>
+<div class="fieldset-row">
+                    <fieldset>
+                        <legend>Guarantor Details</legend>
                         <div class="f">
                             <table>
                                 <tr>
@@ -121,6 +136,10 @@
                             </table>
                         </div>
                     </fieldset>
+                    <fieldset>
+                        <legend>Viewer</legend>
+                    </fieldset>
+                </div>
                     <button type="button" class="Button">Save</button>
                     <input type="submit" value="Nextpage" id="button" class="b">
                 </form>
